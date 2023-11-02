@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript</title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+
+let arr = [];
+let length = parseInt(prompt("Введіть довжину масиву:"));
+    for (let i = 0; i < length; i++) {
+let element = prompt("Введіть" + (i + 1) + ". елемент:");
+     arr.push(element);
+}
+document.getElementById("output").innerHTML += "Початковий масив: " + arr.join(", ") + "<br>";
+        arr.sort();
+document.getElementById("output").innerHTML += "Упорядкований масив: " + arr.join(", ") + "<br>";
+        arr.splice(2, 3);
+document.getElementById("output").innerHTML += "Змінений масив: " + arr.join(", ") + "<br>";
+
+    </script>
+</body>
+</html>
